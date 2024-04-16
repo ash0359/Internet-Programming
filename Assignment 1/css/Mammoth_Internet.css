@@ -1,0 +1,101 @@
+h1{
+    position: sticky;
+    top: 20px;
+    z-index: 1;
+    padding: 10px;
+    background-color: #a9e2f8;
+    text-align: center;
+}
+
+h2 {
+    padding: 2px;
+    font-family: Georgia, "Times New Roman", Times, and serif;
+    background-color: #d3d3d3;
+    margin: 0;
+    color: black;
+    text-align: left;
+}
+
+p{
+    margin: 0;
+    padding-bottom: 20px;
+}
+.red{
+    background-color: #e61e1e;
+}
+
+.green{
+    background-color: #1ee62f;
+}
+
+.Extra-padding1{
+    padding-top: 1px;
+}
+
+.Extra-padding2{
+    padding-bottom: 2px;
+}
+
+.list{
+    font-size: medium;
+    font-style: italic;
+}
+
+#greenback{
+    background-color: #1ee62f;
+    margin: 0;
+}
+
+.marg{
+    margin: 0;
+}
+#flowchart_photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.BoldItalic{
+    font-weight: bold;
+}
+.pad{
+    padding: 2px;
+}
+#main_container{
+    padding: 150px 50px 20px 50px;
+}
+
+.adjus{
+    width: 74%;
+    border: 0.5px solid black;
+}
+
+.col{
+    background-color: #d3d3d3;
+}
+
+.pa{
+    padding: 5px;
+}
+
+.move
+{
+    float: right;
+    width: 25%;
+}
+
+.toppad{
+    margin-top: 20px;
+}
+
+.tabcol{
+    background-color: #d3d3d3;
+}
+
+.bor{
+    border: 1 solid black;
+}

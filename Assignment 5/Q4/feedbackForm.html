@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/assign.css">
+  </head>
+  <body>
+
+
+  <main class="Feedback">
+    <h4>Feedback Form ... Let Us Know What You Think</h4>
+
+    <table>
+      <tr>
+        <td>Salutation:</td>
+        <td><select name="salute">
+          <option>&nbsp;</option>
+          <option>Mrs.</option>
+          <option>Ms.</option>
+          <option>Mr.</option>
+          <option>Dr.</option>
+        </select></td>
+      </tr>
+    </table>
+    
+    <form
+				id="contactForm"
+				onsubmit="feedbackFormValidate()"
+				action="/submit-feedback"
+				method="post"
+				enctype="application/x-www-form-urlencoded"
+			>
+      	
+        <label for="name">First Name:</label><br />
+				<input type="text" id="name" name="name" required value = 'Ashammeet'/><br />
+
+        <label for="last">Last Name:</label><br />
+				<input type="text" id="last" name="last"  /><br />
+
+        <label for="email">Email:</label><br />
+				<input type="text" id="email" name="email" required value = 'gill-a97@uwinnipeg.webmail.ca'/><br />
+      
+        <label for="number">Phone Number:</label><br />
+				<input
+					type="text" id="number" name="number" required value = '3147996'/><br />
+
+        
+        <label for="subject">Subject:</label><br />
+        <input type="text" id="subject" name="subject"  /><br />
+        
+        <label for="comment">Comments:</label><br />
+				<input type="text" id="comment" name="comment"  /><br />
+        
+        <table>
+        <tr>
+          <td colspan="2">Please check here if you wish to receive a reply:
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Submit" /></td>
+          <td></td>
+        </tr>
+      </table>
+
+		</form>
+    
+  </main>
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/20.24.1-233/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							'outputScale': 1.5,
+							'renderLatex': false
+						});
+					}
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/20.24.1-233/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script></body></html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BACKGROUNG COLOR CHANGER</title>
+    <link rel="stylesheet" href="../style.css">
+{{!--     <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style> --}}
+  </head>
+
+
+
+  <body>
+
+    <script>
+      const colValue = "{{col}}";
+        console.log("colValue:", colValue);
+
+      if(colValue==="random")
+      {
+        var number1 = Math.random();
+        number1 = number1 * 256;
+        Math.floor(number1);
+
+        var number2 = Math.random();
+        number2 = number2 * 256;
+        Math.floor(number2);
+
+        var number3 = Math.random();
+        number3 = number3 * 256;
+        Math.floor(number3);
+
+        document.body.style.backgroundColor=`rgb(${number1},${number2},${number3})`;
+      }
+      else if(colValue="")
+      {
+        document.body.style.backgroundColor = "white";
+      }
+      else{
+        document.body.style.backgroundColor = "{{col}}";
+      }
+      </script>
+    <h1>BACKGROUND COLOR CHANGER</h1>
+
+    <hr />
+    
+    {{{body}}}
+  </body>
+</html>
